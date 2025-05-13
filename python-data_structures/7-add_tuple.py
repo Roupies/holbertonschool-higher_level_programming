@@ -7,4 +7,3 @@ def add_tuple(tuple_a=(), tuple_b=()):
 
     # Additionne les premiers et deuxièmes éléments
     return (a1 + b1, a2 + b2)
-
