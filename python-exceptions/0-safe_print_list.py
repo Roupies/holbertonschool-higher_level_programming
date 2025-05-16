@@ -4,6 +4,8 @@ def safe_print_list(my_list=[], x=0):
 
     i = 0
     try:
+        if x <= 0:
+            return 0
         for i in my_list:
             print(i, end='')
             if i == x:
@@ -13,5 +15,3 @@ def safe_print_list(my_list=[], x=0):
         return i
     except TypeError or ValueError:
         print("Please choose a positive integer for x")
-    except:
-        print("Error")
