@@ -9,7 +9,7 @@ def safe_print_list(my_list=[], x=0):
             if i == x:
                 print()
                 return i
-        print()    
+        print()
         return i
     except TypeError or ValueError:
         print("Please choose a positive integer for x")
