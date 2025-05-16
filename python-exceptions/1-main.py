@@ -1,17 +1,39 @@
 #!/usr/bin/python3
 safe_print_integer = __import__('1-safe_print_integer').safe_print_integer
 
-value = 89
-has_been_print = safe_print_integer(value)
-if not has_been_print:
-    print("{} is not an integer".format(value))
+# Test 1: entier positif
+value = 42
+print("Return:", safe_print_integer(value))  # Affiche: 42 + Return: True
 
-value = -89
-has_been_print = safe_print_integer(value)
-if not has_been_print:
-    print("{} is not an integer".format(value))
+# Test 2: entier négatif
+value = -3
+print("Return:", safe_print_integer(value))  # Affiche: -3 + Return: True
 
-value = "School"
-has_been_print = safe_print_integer(value)
-if not has_been_print:
-    print("{} is not an integer".format(value))
+# Test 3: zéro
+value = 0
+print("Return:", safe_print_integer(value))  # Affiche: 0 + Return: True
+
+# Test 4: chaîne de caractères
+value = "abc"
+print("Return:", safe_print_integer(value))  # Rien + Return: False
+
+# Test 5: float
+value = 3.14
+print("Return:", safe_print_integer(value))  # Rien + Return: False
+
+# Test 6: booléen
+value = True
+print("Return:", safe_print_integer(value))  # Affiche: 1 + Return: True
+
+# Test 7: liste
+value = [1, 2, 3]
+print("Return:", safe_print_integer(value))  # Rien + Return: False
+
+# Test 8: dictionnaire
+value = {"a": 1}
+print("Return:", safe_print_integer(value))  # Rien + Return: False
+
+# Test 9: None
+value = None
+print("Return:", safe_print_integer(value))  # Rien + Return: False
+
