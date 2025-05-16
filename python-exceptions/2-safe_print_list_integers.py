@@ -5,13 +5,13 @@ def safe_print_list_integers(my_list=[], x=0):
         count = 0
         for i in my_list:
             try:
-                if isinstance(i, int):
+                if count == x:
+                    break
+                elif isinstance(i, int):
                     print("{:d}".format(i), end='')
                     count += 1
                 else:
                     continue
-                if count == x:
-                    break
             except (TypeError, ValueError):
                 pass
         print()

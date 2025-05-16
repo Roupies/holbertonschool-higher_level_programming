@@ -8,7 +8,7 @@ print("=> Nombre imprimé :", nb_print)
 
 print("\nTest 2 : liste avec des types mixtes")
 my_list = [1, "a", 3, "b", 5]
-nb_print = safe_print_list_integers(my_list, 3)
+nb_print = safe_print_list_integers(my_list, 0)
 print("=> Nombre imprimé :", nb_print)
 
 print("\nTest 3 : liste avec aucun entier")
