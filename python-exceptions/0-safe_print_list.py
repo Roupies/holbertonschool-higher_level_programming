@@ -2,16 +2,17 @@
 
 def safe_print_list(my_list=[], x=0):
 
-    i = 0
+    i = counter = 0
     try:
         if x <= 0:
             return 0
         for i in my_list:
+            counter += 1
             print(i, end='')
             if i == x:
                 print()
-                return i
+                return counter
         print()
-        return i
+        return counter
     except TypeError or ValueError:
         print("Please choose a positive integer for x")
