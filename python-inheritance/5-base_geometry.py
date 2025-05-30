@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-class BaseGeometry:
+class BaseGeometry():
     """
     BaseGeometry is a base class representing
     an abstract geometry.
