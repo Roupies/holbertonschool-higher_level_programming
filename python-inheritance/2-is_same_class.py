@@ -1,12 +1,24 @@
+#!/usr/bin/python3
+
+"""
+    Module for is_same_class
+"""
+
+
 def is_same_class(obj, a_class):
     """
-    Check if obj is exactly an instance of a_class (no subclasses).
+    is_same_class:
+        Check if an object is extactly and instance
+        of the specified class
 
     Args:
-        obj: any object
-        a_class: class to check
+        obj (): object to check
+        a_class (class): class to check
 
     Returns:
-        bool: True if obj is exactly instance of a_class, else False
+        boolean: True or false
     """
-    return type(obj) is a_class
+    if type(obj) is a_class:
+        return (isinstance(obj, a_class))
+    else:
+        return False
