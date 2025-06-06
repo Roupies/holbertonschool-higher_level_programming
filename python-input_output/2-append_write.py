@@ -5,6 +5,7 @@ Module to append a string to a text file and returns
 the number of characters appended.
 """
 
+
 def append_write(filename="", text=""):
 
     """
