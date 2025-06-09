@@ -2,7 +2,7 @@
 
 import json
 
-"""
+__doc__ = """
 Module: to_json_string
 
 This module provides functionality to convert Python objects into JSON string representations.
