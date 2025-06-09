@@ -5,19 +5,22 @@ import json
 __doc__ = """
 Module: to_json_string
 
-This module provides functionality to convert Python objects into JSON string representations.
-It includes one main function:
+This module provides functionality to convert Python objects into JSON
+string representations. It includes one main function:
 - to_json_string: Converts a Python object to a JSON string
 
-The module is part of a series of utility functions for handling JSON data in Python.
+The module is part of a series of utility functions for handling JSON
+data in Python.
 """
+
 
 def to_json_string(my_obj):
     """
     Convert a Python object to a JSON string representation.
 
     Args:
-        my_obj: The Python object to convert to JSON.
+        my_obj: The Python object to convert to JSON
+            representation.
 
     Returns:
         str: A JSON string representation of the object.
