@@ -40,6 +40,6 @@ An HTTP request is made of several parts:
 | 500 | Internal Server Error | When a server error occurs |
 
 
-Post request    
+  
 
 
