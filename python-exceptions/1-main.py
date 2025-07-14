@@ -5,15 +5,15 @@ safe_print_integer = __import__('1-safe_print_integer').safe_print_integer
 value = 42
 print("Return:", safe_print_integer(value))  # Affiche: 42 + Return: True
 
-# Test 2: entier négatif
+# Test 2: negative integer
 value = -3
 print("Return:", safe_print_integer(value))  # Affiche: -3 + Return: True
 
-# Test 3: zéro
+# Test 3: zero
 value = 0
 print("Return:", safe_print_integer(value))  # Affiche: 0 + Return: True
 
-# Test 4: chaîne de caractères
+# Test 4: string
 value = "abc"
 print("Return:", safe_print_integer(value))  # Rien + Return: False
 
@@ -21,7 +21,7 @@ print("Return:", safe_print_integer(value))  # Rien + Return: False
 value = 3.14
 print("Return:", safe_print_integer(value))  # Rien + Return: False
 
-# Test 6: booléen
+# Test 6: boolean
 value = True
 print("Return:", safe_print_integer(value))  # Affiche: 1 + Return: True
 
